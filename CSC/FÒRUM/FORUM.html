@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="ForumCss.css" rel="stylesheet">
+    <title>FORUM</title>
+</head>
+<body>
+    
+    <header>
+  
+        <h1 class="titol">CEREBRAL STROKE CARES</h1>
+    </header>
+
+    <nav class="navegation">
+            <ul>
+                    <li><a href="../INICI/Inici.html" class="first">INICI</a></li>
+                    <li><a href="../QUI SOM/QUI SOM.html" class="first">QUI SOM?</a></li>
+                    <li><a href="#" class="active">FÒRUM</a></li>
+                    <li><a href="../APLICACIÓ/APP.html" class="first">APLICACIÓ</a></li>
+                    <li><a href="../CONTACTE/CONTACTE.html" class="first">CONTACTE</a></li>
+        
+                </ul>
+    </nav>
+
+    <div class="content">
+        <section>
+                <article>
+                    </article>
+                <input type="text" id="nouP" placeholder="Usuari"/><br/>
+                <input type="text" id="nouP2"placeholder="Escriu el que vulguis..."/><br/>
+                <button id="afegir">Envia</button><br/>
+     
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; Projectes Integrats 2 | Marc Tusell, Patricia Huete, Marc Aparisi, Ramon Vilardell | UVic-Ucc</p>
+      </footer>
+
+
+      <script>
+        let contingutNouP = document.getElementById('nouP')
+        let contingutNouP2 = document.getElementById('nouP2')
+        function afegirParagraf(){
+          let nouText = contingutNouP.value//agafar input
+          let nouText2 = contingutNouP2.value
+          contingutNouP.value = ' '
+          contingutNouP2.value = ' '
+          if (nouText.length > 0 && nouText2.length > 0){
+            
+            let dataActual= new Date()
+            let nouDiv = document.createElement('div')
+            let nouElement1 = document.createElement('p')
+            nouElement1.appendChild(document.createTextNode(nouText))
+            let nouElement2 = document.createElement('p')
+            nouElement2.appendChild(document.createTextNode(dataActual.toLocaleDateString()))
+            let nouElement3 = document.createElement('p')
+            nouElement3.appendChild(document.createTextNode(nouText2))
+            nouDiv.appendChild(nouElement1)//perque fa el > no ho antenc
+            nouDiv.appendChild(nouElement2)//perque fa el > no ho antenc
+            nouDiv.appendChild(nouElement3)//perque fa el > no ho antenc
+            document.querySelector('section>article').appendChild(nouDiv)//perque fa el > no ho antenc
+            nouElement1.classList.add("nom")
+            nouElement2.classList.add("data")
+            nouElement3.classList.add("paragraf")
+           
+          }
+       
+        }
+      
+        
+        document.getElementById('afegir').onclick = afegirParagraf;
+        
+      </script>
+</body>
+
+</html>

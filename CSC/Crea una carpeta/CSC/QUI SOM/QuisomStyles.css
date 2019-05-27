@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+body{
+    background-color:black;
+}
+header{
+ 
+    margin: 1% 10% 0 10%;
+ 
+    padding-bottom: 1%;
+    border-bottom: solid white 1px;
+
+}
+
+
+.titol{
+    margin-top: 2%;
+    color: white;
+    text-align: center;
+}
+
+.explicació p{
+    font-size: 150%;
+    text-align: center;
+    color: black;
+    margin-top: 2%;
+    margin-right: 2%;
+    margin-left:2%;
+
+}
+
+nav ul{
+    line-height: 3.3em;
+    text-align: center;
+}
+nav li{
+    margin-right:2%;
+    margin-left:2%;
+    padding-left:1%;
+    display: inline;
+    font-size: 1em;
+
+}
+
+nav li a{
+    color:white;
+    text-decoration: none;
+}
+.active{
+    color: rgb(0, 238, 255);
+    font-weight:bold;
+    font-size:130%;
+    
+}
+
+.content{
+    
+    display: flex;
+    background-color: rgb(252, 252, 242);
+}
+
+
+.Marc_A{
+    color: white; 
+    float: left;width:20%;padding: 1%;border-radius: 10px; 
+margin-left: 7%;}
+
+.Marc_T{ 
+    color: white; float: left;width:20%; padding: 1%;border-radius: 10px; }
+
+.Patricia_H{ 
+    color: white; float: left;width:20%;padding: 1%;border-radius: 10px;    }
+
+.Ramon_V{ 
+    color: white; float:left;width:21%;padding: 1%;border-radius: 10px; }
+.persones .ul{
+    margin-top: 20%;
+    color: white; margin-top: 20%;
+    
+}
+.container{
+    background-color: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+
+.persona img{
+    float: left;
+    margin-left: 13%;
+    margin-top: 5%;
+    width: 9%;
+    height: 1%;
+    margin-top: 5%;
+}
+
+button{
+    background-color: white;
+    color: black;
+    border-radius: 5%;
+    padding: 1%;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    }
+
+.correu{
+    text-align: center;
+}
+
+
+
+footer{
+    clear: both;
+    border-top: 1px solid white;
+    padding-top:1%;
+    padding-bottom: 1%;
+    margin-top: 2%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+    
+  }
