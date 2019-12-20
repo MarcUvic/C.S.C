@@ -6,20 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    
 </head>
+
 <body>
-    <div class=layer>
-    <header>
-    <div class="layer">
-        <img src= "Assets/1402a2229ee6583836556db76c5daaa9.png" >
-        <ul class="navbar">
-                <li><a id="home"> HOME </a></li>
-                <li><a  id="actors"> FEATURES </a></li>
-                <li><a  id="games"> GAMES </a></li>
-                <li><a  id="media"> MEDIA </a></li>
+        
+        <audio id="lostmojo" autoplay="autoplay">
+                <source src="Assets/The Guess Who - Laughing Joker OST.mp3" type="audio/mp3">
+            </audio>
             
+          
+        <button onclick="GoToTop()" id="myBtn" title="Go to top">Go To Top</button>
+        <button class="trailer" id="play-video" onclick="document.getElementById('lostmojo').pause()"> PAUSE</button>
+        <button class="trailer2" id="play-video2" onclick="document.getElementById('lostmojo').play()"> PLAY</button>
+        
+<div class="layer">
+    <header>  
+          
+        <img onclick="GoToTop()" src= "Assets/1402a2229ee6583836556db76c5daaa9.png" id= "Logo" >
+        <ul class="navbar">
+                <li><a onclick ="ScrollTo(this)" id="home"> HOME </a></li>
+                <li><a onclick ="ScrollTo(this)" id="actors"> ACTORS </a></li>
+                <li><a onclick ="ScrollTo(this)" id="gamescomics"> COMICS </a></li>
+                <li><a onclick ="ScrollTo(this)" id="media"> MEDIA  </a></li>
         </ul>
     </header>
+    <div id="wrapper">
+        <div id="LC">
+            <h1>T</h1> 
+            
+            <h1>H</h1> 
+            <h1>E</h1> 
+            <h1>J</h1> 
+            <h1>O</h1> 
+            <h1>K</h1> 
+            <h1>E</h1> 
+            <h1>R</h1> 
+            </div>
+    </div>    
     <div class="container">
             <!-- Presentation -->    
             <div class="home">
@@ -30,7 +54,8 @@
                     <img src="Assets/PU7LPSYFV5DPHJHIZ6HZGRHJAQ.jpg">
                     <img src="Assets/jbareham_191003_0958_joker_comics.0.webp">
                 </div>
-            </div>
+            </div>  
+    
             <!-- Information -->
             <div class="Actors">
                 <h1> Famous Actors </h1>
@@ -52,16 +77,15 @@
                 </div>
                 
             </div>
-            <!-- Other games -->
-            <div class="games">
+            <div class="gamescomics">
                 <h1> MAY INTEREST YOU </h1>
-                <img class="xv1" src="/Assets/cine-049186.jpg">
-                <img class="xv2" src="Assets/PORTADA_JPG_WEB_joker_quien_se_rie_el_ultimo_2.jpg">
-                <img class="jke" src="/Assets/f4d4eff646e56a7fea892c3ba2a3875a.jpg">
+                <img class="img1" src="Assets/cine-049186.jpg">
+                <img class="img2" src="Assets/PORTADA_JPG_WEB_joker_quien_se_rie_el_ultimo_2.jpg">
+                <img class="img3" src="Assets/f4d4eff646e56a7fea892c3ba2a3875a.jpg">
                 <div class="row">
-                    <button class="dbxB" ><span>LINK </span></button>
-                    <button class="dbx2B" ><span>LINK </span></button>
-                    <button class="dbfz" ><span>LINK </span></button>
+                    <button class="bt1" ><span>LINK </span></button>
+                    <button class="bt2" ><span>LINK </span></button>
+                    <button class="bt3" ><span>LINK </span></button>
                 </div>
             </div>
             <!-- Image gallery -->
@@ -69,16 +93,16 @@
                 <h1> MEDIA </h1>
                 <div class="row">
                     <div class="column">
-                        <img src="Assets/maxresdefault.jpg" style="width:100%" onclick="expandImg(this);">
+                        <img  onclick="expandImg(this);"src="Assets/maxresdefault.jpg" style="width:100%" onclick="expandImg(this);">
                     </div>
                     <div class="column">
-                        <img src="Assets/download.jpg" style="width:100%" onclick="expandImg(this);">
+                        <img onclick="expandImg(this);" src="Assets/download.jpg" style="width:100%" onclick="expandImg(this);">
                     </div>
                     <div class="column">
-                        <img src="Assets/61c54e79e0dd198970cbcebe0970a3f2.jpg" style="width:100%" onclick="expandImg(this);">
+                        <img onclick="expandImg(this);" src="Assets/61c54e79e0dd198970cbcebe0970a3f2.jpg" style="width:100%" onclick="expandImg(this);">
                     </div>
                     <div class="column">
-                        <img src="Assets/joker-detalle-batman-plena-vista-seguramente-pasaste-alto.jpg" style="width:100%" onclick="expandImg(this);">
+                        <img onclick="expandImg(this);" src="Assets/joker-detalle-batman-plena-vista-seguramente-pasaste-alto.jpg" style="width:100%" onclick="expandImg(this);">
                     </div>
                 </div>
           
@@ -87,16 +111,22 @@
                     <img id="expandedImg" style="width:100%">
                     <div id="imgtext"></div>
                 </div>
+                
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/EIyZqNbZQI8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
             </div>
-    
+                        
             </div>
         </div>
+        
+        
         <!-- Footer -->
         <footer>
             <p>@MARC APARISI RULL: marc.aparisi@uvic.cat </p>
         </footer>
         
         <script src="globalJS.js"></script>
-    </div>
+
 </body>
+
 </html>
